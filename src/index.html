@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>test app</title>
+</head>
+<body>
+  <form>
+    <div class="check-box">
+      <label>Самовивіз з відділення Нової пошти</label>
+      <input type="checkbox" id="department" name="department" checked />
+      <label>Курєр Нової пошти</label>
+      <input type="checkbox" id="curier" name="curier" />
+    </div>
+    <fieldset class="address-form" style="display: none;">
+      <label>Введіть адресу</label>
+      <input placeholder="Адреса" class="input-field" />
+    </fieldset>
+
+    <fieldset class="department-form">
+      <div>
+        <label>Виберіть місто, введіть перші три літери</label>
+        <input type="text" onfocus="value=''" placeholder="Місто" autocomplete="off" list="citylist" id="city"
+          class="input-field" />
+        <datalist id="citylist" role="listbox">
+      </div>
+      <label>Виберіть відділення</label>
+      <input type="text" onfocus="value=''" placeholder="Відділення, поштомат" autocomplete="off" list="warehouselist"
+        class="input-field" />
+      <datalist id="warehouselist">
+    </fieldset>
+  </form>
+</body>
+</html>
