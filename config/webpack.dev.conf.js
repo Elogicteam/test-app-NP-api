@@ -19,7 +19,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   plugins: [
     new webpack.DefinePlugin({  // plugin to define global constants
       APP_ENV: JSON.stringify(process.env.APP_ENV),
-      API_KEY: JSON.stringify(process.env.API_KEY)
+      API_KEY: JSON.stringify(process.env.API_KEY),
+      URI: JSON.stringify(process.env.URI),
     }),
     new webpack.SourceMapDevToolPlugin({
       filename: "[file].map"
